@@ -1,0 +1,20 @@
+(define (problem p1)
+    (:domain rodzinna-przeprawa)
+    (:objects mama tata janek kasia tratwa)
+    (:init
+        (dorosly-po-lewej mama)
+        (dorosly-po-lewej tata)
+        (dziecko-po-lewej janek)
+        (dziecko-po-lewej kasia)
+        (tratwa-po-lewej tratwa)
+    )
+    (:goal
+        (and
+            (dorosly-po-prawej mama)
+            (dorosly-po-prawej tata)
+            (dziecko-po-prawej janek)
+            (dziecko-po-prawej kasia)
+            (tratwa-po-prawej tratwa)
+        )
+    )
+)

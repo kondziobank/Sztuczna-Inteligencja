@@ -1,0 +1,21 @@
+(define (problem p1)
+  (:domain wilk-koza-kapusta)
+  (:objects lewy-brzeg prawy-brzeg wilk koza kapusta tratwa czlowiek)
+  (:init 
+        (pusta-tratwa tratwa)
+        (na wilk lewy-brzeg)
+        (na koza lewy-brzeg)
+        (na kapusta lewy-brzeg)
+        (na czlowiek lewy-brzeg)
+        (przy-brzegu tratwa lewy-brzeg)
+    )
+  (:goal 
+        (and 
+            (na wilk prawy-brzeg)
+            (na koza prawy-brzeg)
+            (na kapusta prawy-brzeg)
+            (na czlowiek prawy-brzeg)
+            (przy-brzegu tratwa prawy-brzeg)
+        )
+    )
+)
